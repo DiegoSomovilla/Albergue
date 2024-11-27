@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas - Albergue Real Fábrica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" role="navigation" aria-label="Navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="Logo del Albergue Real Fábrica">
+                <img src="images/logo letras.png" alt="Nombre del Albergue Real Fábrica" class="additional-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html" aria-label="Ir a habitaciones">
+                            <i class="bi bi-house"></i> Rooms
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reservation.html" aria-label="Ir a reservas">
+                            <i class="bi bi-calendar-check"></i> Reservation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reservation Form Section -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Haz tu Reserva</h2>
+        <p class="text-center">Rellena el siguiente formulario para reservar tu estancia en el Albergue Real Fábrica.</p>
+        <form action="#" method="POST" class="p-4 border rounded shadow-sm bg-light">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre Completo</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Introduce tu nombre completo" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="arrival" class="form-label">Fecha de Llegada</label>
+                    <input type="date" class="form-control" id="arrival" name="arrival" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="departure" class="form-label">Fecha de Salida</label>
+                    <input type="date" class="form-control" id="departure" name="departure" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="roomType" class="form-label">Tipo de Habitación</label>
+                <select class="form-select" id="roomType" name="roomType" required>
+                    <option selected disabled>Selecciona una opción...</option>
+                    <option value="sencilla">Habitación Sencilla</option>
+                    <option value="doble">Habitación Doble</option>
+                    <option value="familiar">Habitación Familiar</option>
+                    <option value="suite">Suite de Lujo</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Comentarios o Requerimientos Especiales</label>
+                <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Escribe aquí tus comentarios"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Enviar Reserva</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>© 2024 Albergue Real Fábrica. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Ir a Facebook">
+                Facebook
+            </a> |
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Ir a Instagram">
+                Instagram
+            </a>
+        </p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

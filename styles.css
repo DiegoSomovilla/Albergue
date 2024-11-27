@@ -1,0 +1,109 @@
+/* Botones negros del carrusel */
+.carousel-caption .btn {
+    background-color: #000 !important; /* Negro para el botón */
+    color: #fff !important; /* Texto blanco */
+    border: none;
+    padding: 10px 20px;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #333 !important; /* Gris oscuro al pasar el mouse */
+    color: #fff !important;
+}
+
+/* Navbar más pequeña */
+.navbar {
+    padding: 0.5rem 1rem; /* Reduce el padding de la Navbar */
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Ajusta la altura del logo */
+}
+
+.navbar .additional-logo {
+    max-height: 40px; /* Ajusta la altura de la imagen adicional */
+    margin-left: 10px; /* Espaciado entre el logo y la imagen adicional */
+}
+
+/* Espaciado en la sección encima de las habitaciones */
+.container.text-center.mt-5 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.container.text-center.mt-5 h3 {
+    font-size: 24px;
+    color: #333; /* Texto gris oscuro */
+}
+
+.container.text-center.mt-5 p {
+    font-size: 16px;
+    color: #555; /* Gris medio */
+}
+
+.container.text-center.mt-5 .btn {
+    background-color: #000; /* Negro para el botón */
+    color: #fff;
+    border: none;
+}
+
+.container.text-center.mt-5 .btn:hover {
+    background-color: #333; /* Gris oscuro al pasar el mouse */
+    color: #fff;
+}
+
+/* Galería de imágenes */
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Actividades */
+.activities-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0; /* Gris claro */
+    color: #333; /* Texto gris oscuro */
+}
+
+.activities-section img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Negro para el fondo */
+    color: #fff; /* Blanco para el texto */
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ccc; /* Gris claro para los enlaces */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff; /* Blanco al pasar el mouse */
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e0e0e0; /* Gris claro */
+    color: #000; /* Texto en negro */
+}
+
+/* Carrusel: ajuste de altura */
+.carousel-inner img {
+    height: 500px; /* Ajusta la altura de las imágenes del carrusel */
+    object-fit: cover; /* Recorta las imágenes para que se adapten sin distorsión */
+}
